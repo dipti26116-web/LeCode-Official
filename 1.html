@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+   <link rel="stylesheet" href="learn/1.css">
+   <title>How THREEJS works</title>
+   <body>
+    <h1>HOW DOES THREE.JS WORK?</h1>
+    <p>Three.js is a Javascript library that renders 3D objects, it is used for making 3D web games, many web games like Slow Road, Off Road Earth etc use Three.js.
+      Not only games but many webs that help us to import models, webs to download 3d games also use Three.js.
+      Three.js mainly uses WebGL, which is a javascript API for rendering 3D graphics in the browser, usually imported through importmap, in html.
+      It also uses javascript features for certain things and does not cut off javascript forever like:</p>
+
+      <p2>Const</p2>
+      
+      <p3>Let</p3>
+      
+      <p4>Arrow functions</p4>
+      
+      <p5>Classes</p5>
+      
+      <p6>Template literals</p6>
+      
+      <p7>Object destructuring</p7>
+      
+      <p8>Array destructuring</p8>
+      
+      <p9>Spread operator</p9>
+      
+      <p10>Rest operator</p10>
+      
+      <p11>Async/await</p11>
+      
+      <p12>Generators</p12>
+      
+      <p13>Modules</p13>
+
+      <p14>To import a renderer we do:</p14>
+
+      <p15>const renderer = new THREE.WebGLRenderer (import THREE from "three"; is required)</p15>
+
+      <p16>Then we add it to the body of the html:</p16>
+
+      <p17>document.body.appendChild(renderer.domElement);</p17>
+
+      <p18>Then we create a scene:</p18>
+
+      <p19>const scene = new THREE.Scene();</p19>
+
+      <p20>Then we create a camera:</p20>
+
+      <p21>const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);</p21>
+
+      <p22>Then we create a cube:</p22>
+
+      <p23>const geometry = new THREE.BoxGeometry();</p23>
+
+      <p24>const material = new THREE.MeshBasicMaterial({color: 0x00ff00});</p24>
+
+      <p25>const cube = new THREE.Mesh(geometry, material);</p25>
+
+      <p26>Then we add the cube to the scene:</p26>
+
+      <p27>scene.add(cube);</p27>
+
+      <p28>Then we move the camera back:</p28>
+
+      <p29>camera.position.z = 5;</p29>
+
+      <p30>Then we create a render loop:</p30>
+
+      <p31>function animate() {</p31>
+
+      <p32>requestAnimationFrame(animate);</p32>
+
+      <p33>cube.rotation.x += 0.01;</p33>
+
+      <p34>cube.rotation.y += 0.01;</p34>
+
+      <p35>renderer.render(scene, camera);</p35>
+
+      <p36>}</p36>
+
+      <p37>animate();</p37>   
+
+      <p38>And that's it! We've created a basic 3D scene with a rotating cube.</p38>
+
+      <p39>Here is the full code:</p39>
+      
+      <p41>import * as THREE from 'three';</p41>
+
+      <p42>const scene = new THREE.Scene();</p42>
+
+      <p43>const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);</p43>
+      <p44>const renderer = new THREE.WebGLRenderer();</p44>
+
+      <p45>renderer.setSize(window.innerWidth, window.innerHeight);</p45>
+
+      <p46>document.body.appendChild(renderer.domElement);</p46>
+
+      <p47>const geometry = new THREE.BoxGeometry();</p47>
+
+      <p48>const material = new THREE.MeshBasicMaterial({color: 0x00ff00});</p48>
+
+      <p49>const cube = new THREE.Mesh(geometry, material);</p49>
+
+      <p50>scene.add(cube);</p50>
+
+      <p51>camera.position.z = 5;</p51>
+
+      <p52>function animate(){</p52>
+
+      <p53>requestAnimationFrame(animate);</p53>
+
+      <p54>cube.rotation.x += 0.01;</p54>
+
+      <p55>cube.rotation.y += 0.01;</p55>
+
+      <p56>renderer.render(scene, camera);</p56>
+
+      <p57>}</p57>
+
+      <p58>animate();</p58>
+
+      <p59>More Three.js learning codes coming soon!</p59>
+      
+
+      
+    
+   </body>
+</html>

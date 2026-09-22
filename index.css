@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: bold;
+}
+
+p1{
+    color:yellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: bold;
+    font-size: 20px;
+}
+
+li1{
+    padding: 10px;
+}
+
+li2{
+    padding: 10px;
+}
+
+li3{
+    padding: 10px;
+}
+
+li4{
+     position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center; 
+}
+
+body {
+  background-color: #000000; /* Sets background to black */
+  margin: 0;                 /* Removes default browser white borders */
+  min-height: 100vh;         /* Forces the background to cover the full viewport height */
+}
+
+img {
+    position: fixed;
+    top: 50px;
+    left: 1000px;
+    margin: 0;
+    z-index: 1000; /* Keeps it on top of other text */
+}
+
+p, h2{
+    color: white;
+}

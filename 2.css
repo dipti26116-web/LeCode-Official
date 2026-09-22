@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;      /* Makes them behave like standard paragraphs */
+    margin-bottom: 15px; 
+    
+}
+
+h1 {
+    text-align: center;
+    
+
+}
+
+p2, p5, p8, p9, p12, p13{
+    display: block;      /* Makes them behave like standard paragraphs */
+    margin-bottom: 15px; /* Adds 15px of space below each item */
+    color: red;
+    font-family: Consolas, Monaco, "Lucida Console", "Liberation Mono", monospace;
+}
+
+p7{
+        display: block;      /* Makes them behave like standard paragraphs */
+    margin-bottom: 15px;
+}
+
+p16, p0{
+    display: block;      /* Makes them behave like standard paragraphs */
+    margin-bottom: 15px; /* Adds 15px of space below each item */
+    color: blue;
+    
+}
